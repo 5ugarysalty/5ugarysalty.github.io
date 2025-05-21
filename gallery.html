@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mizan Qistina">
+    <meta name="description" content="Photo Gallery - Mizan Qistina">
+    <meta name="keywords" content="gallery, photo dump, IML254, personal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Mizan Qistina</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffe6f0;
+            color: #33001a;
+        }
+
+        nav {
+            background-color: #cc3366;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ff6699;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff0f5;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .photo-card {
+            background-color: white;
+            border: 2px solid #cc3366;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .photo-caption {
+            padding: 10px;
+            font-size: 0.9em;
+            background-color: #ffe6f0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #cc3366;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner-wrapper">
+            <img src="C:\Users\User\Desktop\entah la weh\pink sky 5.jpg" alt="My Banner" height="400px" width="1800px">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="about me.html">About Me</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+ 	<h1 style="font-family:cursive">Photo Dump</h1>
+
+    <main>
+        <p>Here's a collection of random moments and memories I've captured. Nothing fancy—just real life and happy times.</p>
+
+        <div class="gallery-grid">
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\me and iqram 2.jpg" alt="Photo 1">
+                <div class="photo-caption">At a bird park when I was eight with my little brother</div>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\me and iqram.jpg" alt="Photo 2">
+                <div class="photo-caption">Another one</div>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\me2.jpg" alt="Photo 3">
+                <div class="photo-caption">Went to a park at the evening after a tiring hari raya day</div>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\kenduri pakcik.jpg" alt="Photo 4">
+                <div class="photo-caption">A random moment at my uncle's wedding day</div>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\empat.jpg" alt="Photo 5">
+                <div class="photo-caption">A night out with the girls, I mean friends</div>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\abg2.jpg" alt="Photo 6">
+                <div class="photo-caption">A random picture with my two brothers at Langkawi</div>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\dua.jpg" alt="Photo 7">
+                <div class="photo-caption">I was being forced to take this picture with her</div>
+            </div>
+            <div class="photo-card">
+                <img src="C:\Users\User\Desktop\entah la weh\me4.jpg" alt="Photo 8">
+                <div class="photo-caption">I took this picture secretly when my mother was nagging at my little brother</div>
+            </div>
+        </div>
+    </main>
+<br>
+
+    <footer>
+        <p>&copy; 2025 Mizan Qistina | Last Updated: May 2025</p>
+    </footer>
+</body>
+</html>

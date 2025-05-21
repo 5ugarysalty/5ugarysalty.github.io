@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mizan Qitsina">
+    <meta name="description" content="Contact page - Mizan Qistina">
+    <meta name="keywords" content="contact, email, social media, IML254">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mizan Qistina</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffe6f0;
+            color: #33001a;
+        }
+
+        nav {
+            background-color: #cc3366;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ff6699;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff0f5;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-left {
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+
+        .contact-left img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #cc3366;
+        }
+
+        .contact-right {
+            flex: 1 1 400px;
+            max-width: 400px;
+            border: 3px solid #cc3366;
+            border-radius: 10px;
+            background-color: #fff;
+            overflow: hidden;
+            position: relative;
+            height: 220px;
+        }
+
+        .slide {
+            display: none;
+            padding: 20px;
+            font-size: 1.1em;
+            height: 100%;
+        }
+
+        .slide.active {
+            display: block;
+            animation: fade 1s;
+        }
+
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+
+        footer {
+            text-align: center;
+            background-color: #cc3366;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner-wrapper">
+            <img src="C:\Users\User\Desktop\entah la weh\pink sky 4.jpg" alt="My Banner" height="400px" width="1800px">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="about me.html">About Me</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+	<h1 style="font-family:cursive">My Contact Information</h1>
+
+
+    <main>
+        <div class="contact-left">
+            <img src="C:\Users\User\Desktop\entah la weh\me.jpg" alt="My Photo">
+        </div>
+
+        <div class="contact-right">
+            <div class="slide active">
+                <h3  style="font-family:cursive">Email</h3>
+                <p>2023844066@student.uitm.edu.my</p>
+		<p>or</p>
+		<p>qmizan32@gmail.com</p>
+            </div>
+            <div class="slide">
+                <h3  style="font-family:cursive">Phone Number</h3>
+		<br>
+                <p>+60 13 307 9047</p>
+            </div>
+            <div class="slide">
+                <h3  style="font-family:cursive">Instagram</h3>
+		<br>
+                <p>@5ugarysalty_</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mizan Qistina | Last Updated: May 2025</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showNextSlide() {
+            slides[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add("active");
+        }
+
+        setInterval(showNextSlide, 3000); // Rotate every 3 seconds
+    </script>
+</body>
+</html>

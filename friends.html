@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mizan Qistina">
+    <meta name="description" content="Friends page - Mizan Qistina">
+    <meta name="keywords" content="friends, gallery, personal, IML254">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends | Mizan Qistina</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffe6f0;
+            color: #33001a;
+        }
+
+        nav {
+            background-color: #cc3366;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ff6699;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff0f5;
+            text-align: center;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border: 3px solid #cc3366;
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            border-bottom: 2px solid #cc3366;
+        }
+
+        .caption {
+            padding: 10px;
+            font-weight: bold;
+            background-color: #ffe6f0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #cc3366;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner-wrapper">
+            <img src="C:\Users\User\Desktop\entah la weh\pink sky 7.jpg" alt="My Banner" height="400px" width="1800px">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="about me.html">About Me</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<h1 style="font-family:cursive">My Friends</h1>
+
+    <main>
+        <p>Here are some of my favorite moments with friends. Hover to pause or enjoy the slideshow!</p>
+
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="C:\Users\User\Desktop\entah la weh\tiga.jpg""highschool friends">
+                <div class="caption">Somehow we became a good friends - Safia and Yana</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="C:\Users\User\Desktop\entah la weh\tigaa.jpg" alt="childhood friends">
+                <div class="caption">We went through the early phase of being teenagers together and it is a whole mess plus a lot of dramas- Nud, Piqah and Aina</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="C:\Users\User\Desktop\entah la weh\library2.jpg" alt="The purple squad">
+                <div class="caption">We became the scary but fun seniors among the junior librarian (My favorite picture of all times) - Mimie, Izzul, Yana and Alif</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mizan Qistina | Last Updated: May 2025</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); 
+        }
+    </script>
+</body>
+</html>
